@@ -1,8 +1,11 @@
 {
   "name": "static-gz",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "description": "nodejs express plugin to view gz file in browser directly",
   "main": "lib/static_gz.js",
+  "directories": {
+    "lib":"./lib"
+  },
   "scripts": {
     "prepublish": "iced --compile --output lib/ src/",
     "start": "node lib/static_gz.js",
